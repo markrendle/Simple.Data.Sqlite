@@ -10,6 +10,8 @@ namespace Simple.Data.Sqlite
                 {"image", typeof (byte[])},
                 {"text", typeof (string)},
                 {"uniqueidentifier", typeof (Guid)},
+                {"guid", typeof (Guid)},
+                {"uuid", typeof (Guid)},
                 {"date", typeof (DateTime)},
                 {"time", typeof (DateTime)},
                 {"datetime2", typeof (DateTime)},
