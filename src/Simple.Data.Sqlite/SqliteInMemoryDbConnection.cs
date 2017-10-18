@@ -36,5 +36,9 @@ namespace Simple.Data.Sqlite
                 DelegatedConnection.Close();
         }
 
+        public override IDbCommand CreateCommand()
+        {
+            return new SqliteInMemoryDbCommand(base.CreateCommand());
+        }
     }
 }
