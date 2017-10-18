@@ -41,7 +41,7 @@ namespace Simple.Data.SqliteTests
             Assert.Pass();
         }
 
-        [Test, Ignore("sqlite bug")]
+        [Test]
         public void CanQueryInMemoryDatabase()
         {
             var employees = db.Employees.All();
